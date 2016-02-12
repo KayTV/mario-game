@@ -1,10 +1,10 @@
 {
   "name": "update-me",
   "version": "0.0.0",
-  "description": "",
-  "main": "gulpfile.js",
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "start": "node ./src/server/app.js"
+  },
+  "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-clean": "^0.3.1",
@@ -15,7 +15,9 @@
     "gulp-uglify": "^1.4.2",
     "jshint-stylish": "^2.0.1",
     "run-sequence": "^1.1.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
   }
 }
-
-
