@@ -112,15 +112,15 @@ function update() {
     if ((jumpButton.isDown || cursors.up.isDown) && player.body.onFloor() && game.time.now > jumpTimer)
     {
         player.body.velocity.y = -450;
-        jumpTimer = game.time.now + 750;
+        jumpTimer = game.time.now + 350;
     }
 
 }
 
 function render () {
 
-    game.debug.text(game.time.physicsElapsed, 32, 32);
-    game.debug.body(player);
-    game.debug.bodyInfo(player, 16, 24);
+    // game.debug.text(game.time.physicsElapsed, 32, 32);
+    // game.debug.body(player);
+    // game.debug.bodyInfo(player, 16, 24);
 
 }
